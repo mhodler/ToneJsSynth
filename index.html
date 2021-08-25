@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.26/Tone.js" integrity="sha512-+esjJ8NSEfoB5Sr8R7jTcYxCR1Bd6q9C+WQC0JA2UXVPT8Mlo/TJqqyp0qeeoxFzkAaa8t6tZCHLGmw3oNI2Qg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.3.2/roundslider.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.3.2/roundslider.js"></script>      
+</head>
+<body>
+<h1 id="heading">Tone JS Synthesizer</h1>
+
+<div id="wrapper">
+    
+        <div id="octave-wrapper">
+            <button id="octavebutton" onclick="upOctave()"> <p id="text">OCTAVE +</p> </button>
+            <button id="octavebutton" onclick="downOctave()"><p id="text">OCTAVE -</p></button>
+        </div>
+        <div id="mastervolume-wrapper">
+            <p id="text-masterVolume">MASTER VOLUME</p>
+            <input type="range" id="volumeSlider" value="0" min="0" max="50" onchange="updateMasterVolume(this.value)">
+         
+        </div>
+    
+        
+    
+        <div id="wavetable-wrapper">
+            <button id="wavetable-button" onclick='changeWaveType("square")'>  <p id="text-wavetable">SQUARE</p></button>
+            <button id="wavetable-button" onclick='changeWaveType("sine")'>  <p id="text-wavetable">SINE</p></button>
+            <button id="wavetable-button" onclick='changeWaveType("sawtooth")'>  <p id="text-wavetable">SAWTOOTH</p></button>
+            <button id="wavetable-button" onclick='changeWaveType("triangle")'>  <p id="text-wavetable">TRIANGLE</p></button>
+        </div>
+
+        <div id="effects-wrapper">
+            <p id="text-effects">DISTORTION</p>
+            <input type="range" id="myRange" value="0" max="100" onchange="updateDistortion(this.value)">
+            
+            <p id="text-effects">REVERB</p>
+            <input type="range" id="myRange" value="0" max="100" onchange="updateReverb(this.value)">
+
+            <p id="text-effects">DELAY</p>
+            <input type="range" id="myRange" value="0" max="10" onchange="updateDelay(this.value)">
+                       
+            <p id="text-effects">NUMBER OF DELAYS</p>
+            <input type="range" id="myRange" value="0" max="10" onchange="updateNumberOfDelay(this.value)">
+        </div>
+    
+   
+    <div id='container'>
+        
+    </div>
+
+
+    <div id="adsr-wrapper">
+        <p id="text-adsr">MADE BY MORITZ HODLER</p>
+    </div>
+
+    <div id="release-wrapper">
+        <p id="text-masterVolume">RELEASE</p>
+        <input type="range" id="releaseSlider" value="0" min="0" max="50" onchange="updateRelease(value)">
+    </div>
+</div>   
+
+<script src="synth.js"></script>
+
+
+</body>
+</html>

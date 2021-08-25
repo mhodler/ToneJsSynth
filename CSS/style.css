@@ -1,0 +1,230 @@
+
+#heading{
+  color: orange;
+  font-size: 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+body{
+  background-color: rgb(35, 35, 37);
+}
+
+#wrapper{
+  position : absolute;
+  height: 600px;
+  width: 1000px;
+  top:calc(25%);
+  left:calc(24%);
+  border-radius: 8px;
+  background-color:rgb(35, 35, 37);
+  border-right: 15px solid rgb(182, 44, 44);
+  border-left: 15px solid rgb(182, 44, 44);
+  border-top: 1px solid rgb(182, 44, 44);
+  border-bottom: 1px solid rgb(182, 44, 44);
+}
+
+#container{
+  position : absolute;
+  height: 50%;
+  border: 5px solid rgb(182, 44, 44);
+  top:calc(60% - 100px);
+  left:calc(50% - 430px);
+  overflow:hidden;
+  border-radius:10px;
+}
+
+.whitenote{
+  height:100%;
+  width:60px;
+  background: white;
+  float: left;
+  border-right: 1px solid black;
+  position:relative;
+  
+}
+
+.blacknote{
+  position: absolute;
+  height:65%;
+  width:55%;
+  z-index: 1;
+  background:rgb(47, 49, 80);
+  left:68%;
+  border-radius:0px 0px 10px 10px;
+}
+
+#adsr-wrapper{
+  position:absolute;
+  width:20%;
+  height: 15%;
+  top:5%;
+  right:6%;
+  float: left;
+  border : 3px solid white;
+  border-radius:10px;
+  text-align: center;
+}
+
+#attackSlider{
+  float: both;
+  margin-left: 0px;
+  margin-top: 0px; 
+}
+
+#decaySlider{
+  float: both;
+margin-left: 0px;
+margin-top: 0px; 
+}
+#sustainSlider{
+  float: both;
+margin-left: 0px;
+margin-top: 0px; 
+}
+
+#releaseSlider{
+  float: both;
+  margin-left: 0px;
+  margin-top: 0px; 
+}
+
+#wavetable-wrapper{
+  position: absolute;
+  width:20%;
+  height: 32%;
+  top:5%;
+  right:50%;
+  float: left;
+  border : 3px solid white;
+  border-radius:4px;
+}
+
+ #wavetable-button{
+  height:25%;
+  width:100%;
+  background-color: rgb(35, 35, 37);
+  border: 0px;
+}
+
+#wavetable-button:hover{
+  height:25%;
+  width:100%;
+  background-color: rgb(81, 81, 116);
+  
+  border: 0px;
+}
+
+#effects-wrapper{
+  position: absolute;
+  width:20%;
+  height: 32%;
+  top:5%;
+  right:28%;
+  float: left;
+  border : 3px solid white;
+  border-radius:4px;
+  text-align: center;
+}
+#mastervolume-wrapper{
+  position: absolute;
+  width:20%;
+  height: 15%;
+  top:22%;
+  right:72%;
+  float: left;
+  border : 3px solid white;
+  border-radius:4px;
+  text-align: center;
+}
+#volumeSlider{
+  float: both;
+  margin-left: 0px;
+  margin-top: 0px; 
+}
+
+
+#octave-wrapper{
+  position: absolute;
+  width:20%;
+  height: 15%;
+  top:5%;
+  right:72%;
+  float: left;
+  border : 3px solid white;
+  border-radius:4px;
+ 
+}
+
+
+
+#octavebutton{
+ width:100%;
+ height:50%;
+ border:0px;
+ background-color:rgb(35, 35, 37);
+}
+#octavebutton:hover{
+  background-color:rgb(81, 81, 116);
+}
+
+#text{
+  color:white;
+  font-size:20px;
+  font-style: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+}
+
+#text-wavetable{
+  color:white;
+  font-size: 20px;
+  font-style: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+}
+
+#text-masterVolume{
+  
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-style: bold;
+  margin: 2px;
+  margin-left: 5px;
+  padding:10px;
+}
+
+
+#release-wrapper{
+  
+  position:absolute;
+  width:20%;
+  height: 15%;
+  top:22%;
+  right:6%;
+  float: left;
+  border : 3px solid white;
+  border-radius:10px;
+  text-align: center;
+}
+
+#text-effects{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-style: bold;
+  margin: 2px;
+  margin-left: 5px;
+}
+
+
+#text-adsr{
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: bold;
+  margin: 2px;
+  margin-left: 5px;
+  padding:13px;
+}
